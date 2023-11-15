@@ -11,5 +11,7 @@ class MarketActivity : AppCompatActivity() {
 
         binding=ActivityMarketBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.moduleToolbar.mainToolbar)
     }
 }
