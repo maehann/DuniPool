@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/about_txt"
+        style="@style/CoinBitText.Body1Alternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="About"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/about_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/background_rounded_all">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:weightSum="4"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/web"
+                    style="@style/CoinBitText.TitleAlternate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:text="Website"
+                    />
+                <TextView
+                    android:id="@+id/twitter"
+                    style="@style/CoinBitText.TitleAlternate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="Twitter"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:id="@+id/reddit"
+                    style="@style/CoinBitText.TitleAlternate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="Reddit"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:id="@+id/github"
+                    style="@style/CoinBitText.TitleAlternate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="Github"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="4dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/web_ad"
+                    style="@style/CoinBitText.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:text="N/A"
+                    />
+                <TextView
+                    android:id="@+id/twitter_ad"
+                    style="@style/CoinBitText.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="N/A"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:id="@+id/reddit_ad"
+                    style="@style/CoinBitText.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="N/A"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:id="@+id/github_ad"
+                    style="@style/CoinBitText.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:text="N/A"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:background="@color/secondaryTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/linear1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_about_coin"
+            style="@style/CoinBitText.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:ellipsize="end"
+            android:maxLines="7"
+            android:text="some more data"
+            android:paddingStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
