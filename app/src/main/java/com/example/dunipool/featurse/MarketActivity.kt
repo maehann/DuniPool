@@ -1,4 +1,4 @@
-package com.example.dunipool
+package com.example.dunipool.featurse
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
