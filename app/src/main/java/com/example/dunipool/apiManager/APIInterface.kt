@@ -1,7 +1,7 @@
 package com.example.dunipool.apiManager
 
-import ir.dunijet.dunipool.apiManager.model.CoinsData
-import ir.dunijet.dunipool.apiManager.model.NewsData
+import com.example.dunipool.apiManager.dataClass.CoinsData
+import com.example.dunipool.apiManager.dataClass.NewsData
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers

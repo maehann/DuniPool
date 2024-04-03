@@ -18,7 +18,7 @@
             android:name=".featurse.CoinActivity"
             android:exported="false" />
         <activity
-            android:name=".featurse.MarketActivity"
+            android:name=".featurse.market.MarketActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -29,17 +29,7 @@
         android:text="BTC"
         android:layout_marginStart="15dp"/>
 
-    <TextView
-        style="@style/CoinBitText.Body1Alternate"
-        android:id="@+id/dollar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/coin_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="USDT"
-        android:layout_marginStart="7dp"/>
-
-    <TextView
+        <TextView
         android:id="@+id/taghir"
         style="@style/CoinBitText.Body1Alternate"
         android:layout_width="wrap_content"

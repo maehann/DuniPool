@@ -1,4 +1,4 @@
-package ir.dunijet.dunipool.apiManager.model
+package com.example.dunipool.apiManager.dataClass
 
 
 import com.google.gson.annotations.SerializedName
