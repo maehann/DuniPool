@@ -21,8 +21,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
-        android:paddingBottom="16dp"
-        android:background="@drawable/background_rounded_all">
+        android:paddingBottom="24dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/background_rounded_all"
+        >
 
         <LinearLayout
             android:id="@+id/linear1"
@@ -85,7 +87,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:orientation="vertical"
                 android:weightSum="4">
 
@@ -93,7 +95,7 @@
                     android:id="@+id/web_ad"
                     style="@style/CoinBitText.Body1"
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingTop="4dp"
                     android:text="N/A"
@@ -102,7 +104,7 @@
                     android:id="@+id/twitter_ad"
                     style="@style/CoinBitText.Body1"
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingTop="6dp"
                     android:text="N/A"
@@ -111,7 +113,7 @@
                     android:id="@+id/reddit_ad"
                     style="@style/CoinBitText.Body1"
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingTop="6dp"
                     android:text="N/A"
@@ -120,7 +122,7 @@
                     android:id="@+id/github_ad"
                     style="@style/CoinBitText.Body1"
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:paddingTop="6dp"
                     android:text="N/A"
@@ -152,7 +154,8 @@
             android:text="some more data"
             android:paddingStart="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view" />
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

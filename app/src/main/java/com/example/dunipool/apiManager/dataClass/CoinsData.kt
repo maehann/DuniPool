@@ -1,4 +1,4 @@
-package ir.dunijet.dunipool.apiManager.model
+package com.example.dunipool.apiManager.dataClass
 
 
 import android.os.Parcelable
@@ -8,32 +8,32 @@ import kotlinx.parcelize.Parcelize
 
 data class CoinsData(
     @SerializedName("Data")
-    val `data`: List<Data>,
+    val `data`: List<Data>?,
     @SerializedName("HasWarning")
-    val hasWarning: Boolean,
+    val hasWarning: Boolean?,
     @SerializedName("Message")
-    val message: String,
+    val message: String?,
     @SerializedName("MetaData")
-    val metaData: MetaData,
+    val metaData: MetaData?,
     @SerializedName("RateLimit")
-    val rateLimit: RateLimit,
+    val rateLimit: RateLimit?,
     @SerializedName("SponsoredData")
-    val sponsoredData: List<Any>,
+    val sponsoredData: List<Any>?,
     @SerializedName("Type")
-    val type: Int
+    val type: Int?
 ) {
 
     @Parcelize
     data class Data(
 
         @SerializedName("CoinInfo")
-        val coinInfo: CoinInfo,
+        val coinInfo: CoinInfo?,
 
         @SerializedName("DISPLAY")
-        val dISPLAY: DISPLAY,
+        val dISPLAY: DISPLAY?,
 
         @SerializedName("RAW")
-        val rAW: RAW
+        val rAW: RAW?
 
     ) :Parcelable  {
 
@@ -51,7 +51,7 @@ data class CoinsData(
             @SerializedName("DocumentType")
             val documentType: String,
             @SerializedName("FullName")
-            val fullName: String,
+            val fullName: String?,
             @SerializedName("Id")
             val id: String,
             @SerializedName("ImageUrl")
@@ -61,7 +61,7 @@ data class CoinsData(
             @SerializedName("MaxSupply")
             val maxSupply: Double,
             @SerializedName("Name")
-            val name: String,
+            val name: String?,
 
             @SerializedName("ProofType")
             val proofType: String,
@@ -100,91 +100,91 @@ data class CoinsData(
             @Parcelize
             data class USD(
                 @SerializedName("CHANGE24HOUR")
-                val cHANGE24HOUR: String,
+                val cHANGE24HOUR: String?,
                 @SerializedName("CHANGEDAY")
-                val cHANGEDAY: String,
+                val cHANGEDAY: String?,
                 @SerializedName("CHANGEHOUR")
-                val cHANGEHOUR: String,
+                val cHANGEHOUR: String?,
                 @SerializedName("CHANGEPCT24HOUR")
-                val cHANGEPCT24HOUR: String,
+                val cHANGEPCT24HOUR: String?,
                 @SerializedName("CHANGEPCTDAY")
-                val cHANGEPCTDAY: String,
+                val cHANGEPCTDAY: String?,
                 @SerializedName("CHANGEPCTHOUR")
-                val cHANGEPCTHOUR: String,
+                val cHANGEPCTHOUR: String?,
 
 
                 @SerializedName("CONVERSIONSYMBOL")
-                val cONVERSIONSYMBOL: String,
+                val cONVERSIONSYMBOL: String?,
                 @SerializedName("CONVERSIONTYPE")
-                val cONVERSIONTYPE: String,
+                val cONVERSIONTYPE: String?,
                 @SerializedName("FROMSYMBOL")
-                val fROMSYMBOL: String,
+                val fROMSYMBOL: String?,
                 @SerializedName("HIGH24HOUR")
-                val hIGH24HOUR: String,
+                val hIGH24HOUR: String?,
                 @SerializedName("HIGHDAY")
-                val hIGHDAY: String,
+                val hIGHDAY: String?,
                 @SerializedName("HIGHHOUR")
-                val hIGHHOUR: String,
+                val hIGHHOUR: String?,
                 @SerializedName("IMAGEURL")
-                val iMAGEURL: String,
+                val iMAGEURL: String?,
                 @SerializedName("LASTMARKET")
-                val lASTMARKET: String,
+                val lASTMARKET: String?,
                 @SerializedName("LASTTRADEID")
-                val lASTTRADEID: String,
+                val lASTTRADEID: String?,
                 @SerializedName("LASTUPDATE")
-                val lASTUPDATE: String,
+                val lASTUPDATE: String?,
                 @SerializedName("LASTVOLUME")
-                val lASTVOLUME: String,
+                val lASTVOLUME: String?,
                 @SerializedName("LASTVOLUMETO")
-                val lASTVOLUMETO: String,
+                val lASTVOLUMETO: String?,
                 @SerializedName("LOW24HOUR")
-                val lOW24HOUR: String,
+                val lOW24HOUR: String?,
                 @SerializedName("LOWDAY")
                 val lOWDAY: String,
                 @SerializedName("LOWHOUR")
-                val lOWHOUR: String,
+                val lOWHOUR: String?,
                 @SerializedName("MARKET")
-                val mARKET: String,
+                val mARKET: String?,
                 @SerializedName("MKTCAP")
-                val mKTCAP: String,
+                val mKTCAP: String?,
                 @SerializedName("MKTCAPPENALTY")
-                val mKTCAPPENALTY: String,
+                val mKTCAPPENALTY: String?,
                 @SerializedName("OPEN24HOUR")
-                val oPEN24HOUR: String,
+                val oPEN24HOUR: String?,
                 @SerializedName("OPENDAY")
-                val oPENDAY: String,
+                val oPENDAY: String?,
                 @SerializedName("OPENHOUR")
-                val oPENHOUR: String,
+                val oPENHOUR: String?,
                 @SerializedName("PRICE")
-                val pRICE: String,
+                val pRICE: String?,
                 @SerializedName("SUPPLY")
-                val sUPPLY: String,
+                val sUPPLY: String?,
                 @SerializedName("TOPTIERVOLUME24HOUR")
-                val tOPTIERVOLUME24HOUR: String,
+                val tOPTIERVOLUME24HOUR: String?,
                 @SerializedName("TOPTIERVOLUME24HOURTO")
-                val tOPTIERVOLUME24HOURTO: String,
+                val tOPTIERVOLUME24HOURTO: String?,
                 @SerializedName("TOSYMBOL")
-                val tOSYMBOL: String,
+                val tOSYMBOL: String?,
                 @SerializedName("TOTALTOPTIERVOLUME24H")
-                val tOTALTOPTIERVOLUME24H: String,
+                val tOTALTOPTIERVOLUME24H: String?,
                 @SerializedName("TOTALTOPTIERVOLUME24HTO")
-                val tOTALTOPTIERVOLUME24HTO: String,
+                val tOTALTOPTIERVOLUME24HTO: String?,
                 @SerializedName("TOTALVOLUME24H")
-                val tOTALVOLUME24H: String,
+                val tOTALVOLUME24H: String?,
                 @SerializedName("TOTALVOLUME24HTO")
-                val tOTALVOLUME24HTO: String,
+                val tOTALVOLUME24HTO: String?,
                 @SerializedName("VOLUME24HOUR")
-                val vOLUME24HOUR: String,
+                val vOLUME24HOUR: String?,
                 @SerializedName("VOLUME24HOURTO")
-                val vOLUME24HOURTO: String,
+                val vOLUME24HOURTO: String?,
                 @SerializedName("VOLUMEDAY")
-                val vOLUMEDAY: String,
+                val vOLUMEDAY: String?,
                 @SerializedName("VOLUMEDAYTO")
-                val vOLUMEDAYTO: String,
+                val vOLUMEDAYTO: String?,
                 @SerializedName("VOLUMEHOUR")
-                val vOLUMEHOUR: String,
+                val vOLUMEHOUR: String?,
                 @SerializedName("VOLUMEHOURTO")
-                val vOLUMEHOURTO: String
+                val vOLUMEHOURTO: String?
             ) :Parcelable
         }
 
@@ -197,100 +197,100 @@ data class CoinsData(
             @Parcelize
             data class USD(
                 @SerializedName("CHANGE24HOUR")
-                val cHANGE24HOUR: Double,
+                val cHANGE24HOUR: Double?,
                 @SerializedName("CHANGEDAY")
-                val cHANGEDAY: Double,
+                val cHANGEDAY: Double?,
                 @SerializedName("CHANGEHOUR")
-                val cHANGEHOUR: Double,
+                val cHANGEHOUR: Double?,
                 @SerializedName("CHANGEPCT24HOUR")
-                val cHANGEPCT24HOUR: Double,
+                val cHANGEPCT24HOUR: Double?,
                 @SerializedName("CHANGEPCTDAY")
-                val cHANGEPCTDAY: Double,
+                val cHANGEPCTDAY: Double?,
                 @SerializedName("CHANGEPCTHOUR")
-                val cHANGEPCTHOUR: Double,
+                val cHANGEPCTHOUR: Double?,
 
 
-                val cONVERSIONSYMBOL: String,
+                val cONVERSIONSYMBOL: String?,
                 @SerializedName("CONVERSIONTYPE")
-                val cONVERSIONTYPE: String,
+                val cONVERSIONTYPE: String?,
                 @SerializedName("FLAGS")
-                val fLAGS: String,
+                val fLAGS: String?,
                 @SerializedName("FROMSYMBOL")
-                val fROMSYMBOL: String,
+                val fROMSYMBOL: String?,
                 @SerializedName("HIGH24HOUR")
-                val hIGH24HOUR: Double,
+                val hIGH24HOUR: Double?,
                 @SerializedName("HIGHDAY")
-                val hIGHDAY: Double,
+                val hIGHDAY: Double?,
                 @SerializedName("HIGHHOUR")
-                val hIGHHOUR: Double,
+                val hIGHHOUR: Double?,
                 @SerializedName("IMAGEURL")
-                val iMAGEURL: String,
+                val iMAGEURL: String?,
                 @SerializedName("LASTMARKET")
-                val lASTMARKET: String,
+                val lASTMARKET: String?,
                 @SerializedName("LASTTRADEID")
-                val lASTTRADEID: String,
+                val lASTTRADEID: String?,
                 @SerializedName("LASTUPDATE")
-                val lASTUPDATE: Int,
+                val lASTUPDATE: Int?,
                 @SerializedName("LASTVOLUME")
-                val lASTVOLUME: Double,
+                val lASTVOLUME: Double?,
                 @SerializedName("LASTVOLUMETO")
-                val lASTVOLUMETO: Double,
+                val lASTVOLUMETO: Double?,
                 @SerializedName("LOW24HOUR")
-                val lOW24HOUR: Double,
+                val lOW24HOUR: Double?,
                 @SerializedName("LOWDAY")
-                val lOWDAY: Double,
+                val lOWDAY: Double?,
                 @SerializedName("LOWHOUR")
-                val lOWHOUR: Double,
+                val lOWHOUR: Double?,
                 @SerializedName("MARKET")
-                val mARKET: String,
+                val mARKET: String?,
 
                 @SerializedName("MEDIAN")
-                val mEDIAN: Double,
+                val mEDIAN: Double?,
 
                 @SerializedName("MKTCAP")
-                val mKTCAP: Double,
+                val mKTCAP: Double?,
                 @SerializedName("MKTCAPPENALTY")
-                val mKTCAPPENALTY: Int,
+                val mKTCAPPENALTY: Int?,
                 @SerializedName("OPEN24HOUR")
-                val oPEN24HOUR: Double,
+                val oPEN24HOUR: Double?,
                 @SerializedName("OPENDAY")
-                val oPENDAY: Double,
+                val oPENDAY: Double?,
                 @SerializedName("OPENHOUR")
-                val oPENHOUR: Double,
+                val oPENHOUR: Double?,
                 @SerializedName("PRICE")
-                val pRICE: Double,
+                val pRICE: Double?,
 
                 @SerializedName("SUPPLY")
-                val sUPPLY: Double,
+                val sUPPLY: Double?,
 
                 @SerializedName("TOPTIERVOLUME24HOUR")
-                val tOPTIERVOLUME24HOUR: Double,
+                val tOPTIERVOLUME24HOUR: Double?,
                 @SerializedName("TOPTIERVOLUME24HOURTO")
-                val tOPTIERVOLUME24HOURTO: Double,
+                val tOPTIERVOLUME24HOURTO: Double?,
                 @SerializedName("TOSYMBOL")
-                val tOSYMBOL: String,
+                val tOSYMBOL: String?,
                 @SerializedName("TOTALTOPTIERVOLUME24H")
-                val tOTALTOPTIERVOLUME24H: Double,
+                val tOTALTOPTIERVOLUME24H: Double?,
                 @SerializedName("TOTALTOPTIERVOLUME24HTO")
-                val tOTALTOPTIERVOLUME24HTO: Double,
+                val tOTALTOPTIERVOLUME24HTO: Double?,
                 @SerializedName("TOTALVOLUME24H")
-                val tOTALVOLUME24H: Double,
+                val tOTALVOLUME24H: Double?,
                 @SerializedName("TOTALVOLUME24HTO")
-                val tOTALVOLUME24HTO: Double,
+                val tOTALVOLUME24HTO: Double?,
                 @SerializedName("TYPE")
-                val tYPE: String,
+                val tYPE: String?,
                 @SerializedName("VOLUME24HOUR")
-                val vOLUME24HOUR: Double,
+                val vOLUME24HOUR: Double?,
                 @SerializedName("VOLUME24HOURTO")
-                val vOLUME24HOURTO: Double,
+                val vOLUME24HOURTO: Double?,
                 @SerializedName("VOLUMEDAY")
-                val vOLUMEDAY: Double,
+                val vOLUMEDAY: Double?,
                 @SerializedName("VOLUMEDAYTO")
-                val vOLUMEDAYTO: Double,
+                val vOLUMEDAYTO: Double?,
                 @SerializedName("VOLUMEHOUR")
-                val vOLUMEHOUR: Double,
+                val vOLUMEHOUR: Double?,
                 @SerializedName("VOLUMEHOURTO")
-                val vOLUMEHOURTO: Double
+                val vOLUMEHOURTO: Double?
             ) :Parcelable
         }
     }
